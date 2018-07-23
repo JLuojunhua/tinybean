@@ -44,17 +44,6 @@
 		O = "Y"
 	}
 
-	function u(e) {
-		document.getElementById("top-nav-doumail-link").onclick = function() {
-			try {
-				moreurl(this, {
-					from: "check_doumail_from_push",
-					uid: e
-				})
-			} catch(e) {}
-		}
-	}
-
 	function a(e) {
 		if(window.Notification && e.num) {
 			var t = n("enable_push_desktop_noty");

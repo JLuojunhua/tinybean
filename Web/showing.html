@@ -7,7 +7,7 @@
 		<title> 豆小荐 </title>
 
 		<link href="css/myCSS.css" rel="stylesheet" type="text/css">
-		<script type="text/javascript" src="https://img3.doubanio.com/f/movie/0495cb173e298c28593766009c7b0a953246c5b5/js/movie/lib/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
 		<link href="css/douban.css" rel="stylesheet" type="text/css">
 		<link href="css/_all.css" rel="stylesheet" type="text/css">
 		<link href="css/init.css" rel="stylesheet">
@@ -378,17 +378,21 @@
             
     
     评价:
-    <span id="rating"> <span id="stars" data-solid="https://img3.doubanio.com/f/shire/5a2327c04c0c231bced131ddf3f4467eb80c1c86/pics/rating_icons/star_onmouseover.png" data-hollow="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" data-solid-2x="https://img3.doubanio.com/f/shire/7258904022439076d57303c3b06ad195bf1dc41a/pics/rating_icons/star_onmouseover@2x.png" data-hollow-2x="https://img3.doubanio.com/f/shire/95cc2fa733221bb8edd28ad56a7145a5ad33383e/pics/rating_icons/star_hollow_hover@2x.png">
+    <span id="rating"> <span id="stars" 
+    	data-solid="https://img3.doubanio.com/f/shire/5a2327c04c0c231bced131ddf3f4467eb80c1c86/pics/rating_icons/star_onmouseover.png" 
+    	data-hollow="https://img3.doubanio.com/f/shire/2520c01967207a1735171056ec588c8c1257e5f8/pics/rating_icons/star_hollow_hover.png" 
+    	data-solid-2x="https://img3.doubanio.com/f/shire/7258904022439076d57303c3b06ad195bf1dc41a/pics/rating_icons/star_onmouseover@2x.png" 
+    	data-hollow-2x="https://img3.doubanio.com/f/shire/95cc2fa733221bb8edd28ad56a7145a5ad33383e/pics/rating_icons/star_hollow_hover@2x.png">
 
-            <a href="" class="j a_show_login" name="pbtn-26752088-1">
+            <a href="" class="j a_show_login" name="pbtn-1">
         <img src="img/star_hollow_hover.png" id="star1" width="16" height="16"/></a>
-            <a href="" class="j a_show_login" name="pbtn-26752088-2">
+            <a href="" class="j a_show_login" name="pbtn-2">
         <img src="img/star_hollow_hover.png" id="star2" width="16" height="16"/></a>
-            <a href="" class="j a_show_login" name="pbtn-26752088-3">
+            <a href="" class="j a_show_login" name="pbtn-3">
         <img src="img/star_hollow_hover.png" id="star3" width="16" height="16"/></a>
-            <a href="" class="j a_show_login" name="pbtn-26752088-4">
+            <a href="" class="j a_show_login" name="pbtn-4">
         <img src="img/star_hollow_hover.png" id="star4" width="16" height="16"/></a>
-            <a href="" class="j a_show_login" name="pbtn-26752088-5">
+            <a href="" class="j a_show_login" name="pbtn-5">
         <img src="img/star_hollow_hover.png" id="star5" width="16" height="16"/></a>
     </span><span id="rateword" class="pl"></span>
     <input id="n_rating" type="hidden" value=""  />
@@ -522,10 +526,7 @@
 <div id="celebrities" class="celebrities related-celebrities">
 
 
-<link rel="stylesheet" href="https://img3.doubanio.com/f/verify/16c7e943aee3b1dc6d65f600fcc0f6d62db7dfb4/entry_creator/dist/author_subject/style.css">
-<div id="author_subject" class="author-wrapper">
-    <div class="loading"></div>
-</div>
+
 <script type="text/javascript">
     var answerObj = {
       ISALL: 'False',
@@ -588,9 +589,10 @@
             (共 220238 条)
             </span>
     </h2>
-    <textarea id="reviewText" style="width: 100%;height: 100px;font-family: '微软雅黑';font-size: large;display: none;"></textarea>
+    <textarea id="reviewText"  placeholder="最多256个字" style="width: 100%;height: 100px;font-family: '微软雅黑';font-size: large;display: none;"></textarea>
     </div>
         <script>
+        	//WCWCWWC
     	function review(){
     		document.getElementById("review").style.display="none";
     		document.getElementById("reviewSubmit").style.display="block";
