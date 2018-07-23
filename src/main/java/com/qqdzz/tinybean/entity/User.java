@@ -9,7 +9,7 @@ public class User {
     private String userPassword;
     private String userSex;
     private String userPhoneNum;
-    private String userLikeCatagories;
+    private String userLikeCategories;
 
     public User() {
     }
@@ -22,7 +22,7 @@ public class User {
         this.userPassword = userPassword;
         this.userSex = userSex;
         this.userPhoneNum = userPhoneNum;
-        this.userLikeCatagories = userLikeCatagories;
+        this.userLikeCategories = userLikeCatagories;
     }
 
     public Integer getId() {
@@ -82,10 +82,10 @@ public class User {
     }
 
     public String getUserLikeCatagories() {
-        return userLikeCatagories;
+        return userLikeCategories;
     }
 
     public void setUserLikeCatagories(String userLikeCatagories) {
-        this.userLikeCatagories = userLikeCatagories;
+        this.userLikeCategories = userLikeCatagories;
     }
 }

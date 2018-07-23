@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="dao.CommentMapper" >
+    <!--映射-->
+    <resultMap id="entity.Comment" type="CommentResult">
+        <id column = "id" property = "id"/>
+        <result column = "movieId" property = "movieId"/>
+        <result column = "userId" property = "userId"/>
+        <result column = "Comment" property = "Comment"/>
+    </resultMap>
+
+    <!--接口实现-->
+    <insert id="add" parameterType="Comment">
+        insert into Score (id,movie_id,user_id,comment)
+        value (#{id}, #{movieId}, #{user_id}, #{comment})
+    </insert>
+
+    <delete id="delete" parameterType="java.lang.Integer">
+        DELETE FROM USER WHERE id = #{id}
+    </delete>
+
+    <update id="update" parameterType="Comment">
+        update USER set
+        movie_id = #{movie_id},
+        user_id = #{userId}
+        comment = #{comment},
+        where id = #{id};
+    </update>
+
+    <select id="findById" parameterType="java.lang.Integer" resultType="Comment">
+        SELECT * FROM USER where id = #{id}
+    </select>
+
+    <select id="findAll" resultMap="CommentResult">
+        select * from USER
+    </select>
+</mapper>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="dao.CollectionMapper" >
+    <!--映射-->
+    <resultMap id="entity.Collection" type="CollectionResult">
+        <id column = "id" property = "id"/>
+        <result column = "movieId" property = "movieId"/>
+        <result column = "userId" property = "userId"/>
+    </resultMap>
+
+    <!--接口实现-->
+    <insert id="add" parameterType="Collection">
+        insert into Score (id,movie_id,user_id)
+        value (#{id}, #{movieId}, #{user_id})
+    </insert>
+
+    <delete id="delete" parameterType="java.lang.Integer">
+        DELETE FROM USER WHERE id = #{id}
+    </delete>
+
+    <update id="update" parameterType="Collection">
+        update USER set
+        movie_id = #{movie_id},
+        user_id = #{userId}
+        where id = #{id};
+    </update>
+
+    <select id="findById" parameterType="java.lang.Integer" resultType="Collection">
+        SELECT * FROM USER where id = #{id}
+    </select>
+
+    <select id="findAll" resultMap="CollectionResult">
+        select * from USER
+    </select>
+</mapper>

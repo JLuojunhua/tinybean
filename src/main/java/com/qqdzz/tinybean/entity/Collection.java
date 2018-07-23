@@ -7,6 +7,7 @@ public class Collection {
     private Integer movieId;
 
     public Collection() {
+        super();
     }
 
     public Collection(Integer id, Integer userId, Integer movieId) {

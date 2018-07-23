@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="dao.ScoreMapper" >
+    <!--映射-->
+    <resultMap id="entity.Score" type="ScoreResult">
+        <id column = "id" property = "id"/>
+        <result column = "movieId" property = "movieId"/>
+        <result column = "userId" property = "userId"/>
+        <result column = "Score" property = "Score"/>
+    </resultMap>
+
+    <!--接口实现-->
+    <insert id="add" parameterType="Score">
+        insert into Score (id,movie_id,user_id,score)
+        value (#{id}, #{movieId}, #{user_id}, #{score})
+    </insert>
+
+    <delete id="delete" parameterType="java.lang.Integer">
+        DELETE FROM USER WHERE id = #{id}
+    </delete>
+
+    <update id="update" parameterType="Score">
+        update USER set
+        movie_id = #{movie_id},
+        user_id = #{userId}
+        score = #{score},
+        where id = #{id};
+    </update>
+
+    <select id="findById" parameterType="java.lang.Integer" resultType="Score">
+        SELECT * FROM USER where id = #{id}
+    </select>
+
+    <select id="findAll" resultMap="ScoreResult">
+        select * from USER
+    </select>
+</mapper>

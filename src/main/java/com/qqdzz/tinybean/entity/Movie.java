@@ -33,7 +33,81 @@ public class Movie {
     //图片地址
     private String icon;
 
+    private Integer oneStar;
+
+    private Integer twoStar;
+
+    private Integer threeStar;
+
+    private Integer fourStar;
+
+    private Integer fiveStar;
+
+
+    public Movie(Integer id, String movieName, Integer commentNum, String director, String scriptwriter, String mainactor, String classification, String produceCountry, String language, String date, Integer year, String movieDuration, Double score, Integer scorePopulation, String icon, Integer oneStar, Integer twoStar, Integer threeStar, Integer fourStar, Integer fiveStar) {
+        this.id = id;
+        this.movieName = movieName;
+        this.commentNum = commentNum;
+        this.director = director;
+        this.scriptwriter = scriptwriter;
+        this.mainactor = mainactor;
+        this.classification = classification;
+        this.produceCountry = produceCountry;
+        this.language = language;
+        this.date = date;
+        this.year = year;
+        this.movieDuration = movieDuration;
+        this.score = score;
+        this.scorePopulation = scorePopulation;
+        this.icon = icon;
+        this.oneStar = oneStar;
+        this.twoStar = twoStar;
+        this.threeStar = threeStar;
+        this.fourStar = fourStar;
+        this.fiveStar = fiveStar;
+    }
+
     public Movie() {
+    }
+
+    public Integer getOneStar() {
+        return oneStar;
+    }
+
+    public void setOneStar(Integer oneStar) {
+        this.oneStar = oneStar;
+    }
+
+    public Integer getTwoStar() {
+        return twoStar;
+    }
+
+    public void setTwoStar(Integer twoStar) {
+        this.twoStar = twoStar;
+    }
+
+    public Integer getThreeStar() {
+        return threeStar;
+    }
+
+    public void setThreeStar(Integer threeStar) {
+        this.threeStar = threeStar;
+    }
+
+    public Integer getFourStar() {
+        return fourStar;
+    }
+
+    public void setFourStar(Integer fourStar) {
+        this.fourStar = fourStar;
+    }
+
+    public Integer getFiveStar() {
+        return fiveStar;
+    }
+
+    public void setFiveStar(Integer fiveStar) {
+        this.fiveStar = fiveStar;
     }
 
     public Movie(Integer id, String movieName, Integer commentNum, String director, String scriptwriter, String mainactor, String classification, String produceCountry, String language, String date, Integer year, String movieDuration, Double score, Integer scorePopulation, String icon) {
@@ -52,6 +126,7 @@ public class Movie {
         this.score = score;
         this.scorePopulation = scorePopulation;
         this.icon = icon;
+
     }
 
     public Integer getId() {
