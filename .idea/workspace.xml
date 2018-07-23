@@ -1,26 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9336b8a-be9f-4dca-8d48-eb2ca14707d4" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_10.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/qqdzz/tinybean/Mapper/CollectionMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/qqdzz/tinybean/Mapper/CommentMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/qqdzz/tinybean/Mapper/MovieMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/qqdzz/tinybean/Mapper/ScoreMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/qqdzz/tinybean/Mapper/UserMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/qqdzz/tinybean/dao/ScoreMapper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/qqdzz/tinybean/entity/Score.java" />
+    <list default="true" id="c9336b8a-be9f-4dca-8d48-eb2ca14707d4" name="Default" comment="添加了application.yml&#10;添加了mapper&#10;添加了score&#10;现在可以连接到数据库了">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qqdzz/tinybean/dao/CollectionMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/qqdzz/tinybean/dao/CollectionMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qqdzz/tinybean/dao/CommentMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/qqdzz/tinybean/dao/CommentMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qqdzz/tinybean/dao/MovieMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/qqdzz/tinybean/dao/MovieMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qqdzz/tinybean/dao/UserMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/qqdzz/tinybean/dao/UserMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qqdzz/tinybean/entity/Collection.java" afterPath="$PROJECT_DIR$/src/main/java/com/qqdzz/tinybean/entity/Collection.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qqdzz/tinybean/entity/Movie.java" afterPath="$PROJECT_DIR$/src/main/java/com/qqdzz/tinybean/entity/Movie.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qqdzz/tinybean/entity/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/qqdzz/tinybean/entity/User.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" />
-      <change beforePath="$PROJECT_DIR$/tinybean.iml" afterPath="$PROJECT_DIR$/tinybean.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +17,8 @@
       <file leaf-file-name="application.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+            <state relative-caret-position="162">
+              <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -305,50 +287,6 @@
               <item name="tinybean" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tinybean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tinybean" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tinybean" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tinybean" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tinybean" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tinybean" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tinybean" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tinybean" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tinybean" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tinybean" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tinybean" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tinybean" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tinybean" type="462c0819:PsiDirectoryNode" />
-              <item name="Mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tinybean" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tinybean" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -499,7 +437,7 @@
       <workItem from="1532241757028" duration="5935000" />
       <workItem from="1532267212642" duration="278000" />
       <workItem from="1532267520921" duration="9564000" />
-      <workItem from="1532307999587" duration="8999000" />
+      <workItem from="1532307999587" duration="9349000" />
     </task>
     <task id="LOCAL-00001" summary="调整了项目目录结构">
       <created>1532267847325</created>
@@ -515,11 +453,18 @@
       <option name="project" value="LOCAL" />
       <updated>1532267866011</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加了application.yml&#10;添加了mapper&#10;添加了score&#10;现在可以连接到数据库了">
+      <created>1532325445310</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1532325445311</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26090000" />
+    <option name="totallyTimeSpent" value="26440000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="24" width="1551" height="1027" extended-state="0" />
@@ -593,7 +538,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="调整了项目目录结构" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整了项目目录结构" />
+    <MESSAGE value="添加了application.yml&#10;添加了mapper&#10;添加了score&#10;现在可以连接到数据库了" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加了application.yml&#10;添加了mapper&#10;添加了score&#10;现在可以连接到数据库了" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1186,8 +1132,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+        <state relative-caret-position="162">
+          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
           <folding />
         </state>
       </provider>
