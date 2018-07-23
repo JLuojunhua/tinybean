@@ -43,7 +43,7 @@ public class CollectionService {
         return collectionList;
     }
 
-    public List<Collection> findByCollection(Integer movieId, Integer userId){
+    public List<Collection> findByUserID(Integer userId){
         List<Collection> collectionList = new ArrayList<Collection>();
         return collectionList;
     }
