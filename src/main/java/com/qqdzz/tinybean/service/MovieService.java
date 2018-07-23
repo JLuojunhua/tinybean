@@ -18,31 +18,62 @@ public class MovieService {
     private MovieMapper movieMapper;
 
     public boolean doAdd(Movie movie) {
-        return true;
+        return movieMapper.add(movie) > 0;
     }
 
     public boolean doModify(Movie movie) {
-        return true;
+        return movieMapper.update(movie) > 0;
     }
 
     public boolean doRemove(int id) {
-        return true;
+        return movieMapper.delete(id) > 0;
     }
 
-    public boolean doRemove(List<Movie> movieList) {
-        return true;
-    }
-
+    /**
+     *
+     * @param id
+     * @return
+     */
     public Movie findById(int id) {
+        Movie movie = movieMapper.findById(id);
+        return movie;
+    }
+
+    //
+    public Movie findByMovieName(String movieName){
         Movie movie = new Movie();
         return movie;
     }
 
-    public List<Movie> findAll() {
+    //
+    public List<Movie> findByDirector(String director){
         List<Movie> movieList = new ArrayList<Movie>();
         return movieList;
     }
 
+    //
+    public List<Movie> findByMainactor(String mainactor){
+        List<Movie> movieList = new ArrayList<Movie>();
+        return movieList;
+    }
+
+    //
+    public List<Movie> findByClassification(String classification){
+        List<Movie> movieList = new ArrayList<Movie>();
+        return movieList;
+    }
+
+    //
+    public List<Movie> findByDate(String date){
+        List<Movie> movieList = new ArrayList<Movie>();
+        return movieList;
+    }
+
+    public List<Movie> findAll() {
+        return movieMapper.findAll();
+    }
+
+    //
     public List<Movie> findByCondition(String movieName) {
         List<Movie> movieList = new ArrayList<Movie>();
         return movieList;

@@ -10,9 +10,14 @@ import java.util.List;
 @Mapper
 @Component
 public interface MovieMapper {
-    void add(Movie collection);
-    void delete(Integer id);
-    void update(Movie collection);
+    int add(Movie collection);
+    int delete(Integer id);
+    int update(Movie collection);
     Movie findById(Integer id);
-    List<User> findAll();
+    List<Movie> findAll();
+    //Movie findByMovieName(String movieName)
+    //List<Movie> findByDirector(String director)
+    //List<Movie> findByMainactor(String mainactor)
+    //List<Movie> findByClassification(String classification)
+    //List<Movie> findByDate(String date)
 }

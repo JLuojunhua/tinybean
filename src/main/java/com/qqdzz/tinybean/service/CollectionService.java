@@ -18,31 +18,31 @@ public class CollectionService {
     private CollectionMapper collectionMapper;
 
     public boolean doAdd(Collection collection){
-        return true;
+        int row = collectionMapper.add(collection);
+        return row>0;
     }
 
     public boolean doModify(Collection collection){
-        return true;
+       int row = collectionMapper.update(collection);
+       return row>0;
     }
 
     public boolean doRemove(int id){
-        return true;
+        int row = collectionMapper.delete(id);
+        return row>0;
     }
 
-    public boolean doRemove(List<Collection> collectionList){
-        return true;
-    }
-
-    public Collection findById(int id){
-        Collection collection = new Collection();
+    /**
+     *
+     * @param id
+     * @return
+     */
+    public Collection findById(Integer id){
+        Collection collection = collectionMapper.findById(id);
         return collection;
     }
 
-    public List<Collection> findAll(){
-        List<Collection> collectionList = new ArrayList<Collection>();
-        return collectionList;
-    }
-
+    //
     public List<Collection> findByUserID(Integer userId){
         List<Collection> collectionList = new ArrayList<Collection>();
         return collectionList;

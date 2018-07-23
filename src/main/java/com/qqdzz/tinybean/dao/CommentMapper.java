@@ -7,8 +7,12 @@ import org.springframework.stereotype.Component;
 @Mapper
 @Component
 public interface CommentMapper {
-    void add(Comment collection);
-    void delete(Integer id);
-    void update(Comment collection);
+    int add(Comment collection);
+    int delete(Integer id);
+    int update(Comment collection);
     Comment findById(Integer id);
+    //List<Comment> findByUserId(Integer userId)
+    //List<Comment> findByCommentText(String commentText)
+    //List<Comment> findBannedAll()
+    //List<Comment> findByMovieName()
 }

@@ -9,9 +9,11 @@ import java.util.List;
 @Mapper
 @Component
 public interface UserMapper {
-    void add(User collection);
-    void delete(Integer id);
-    void update(User collection);
+    int add(User collection);
+    int delete(Integer id);
+    int update(User collection);
     User findById(Integer id);
     List<User> findAll();
+    //int updatePhoto(Integer id, String icon)
+    //User findByUserName(String userName)
 }

@@ -18,42 +18,33 @@ public class UserService {
     private UserMapper userMapper;
 
     public boolean doAdd(User user){
-        return true;
+        return userMapper.add(user) > 0;
     }
 
     public boolean doModify(User user){
-        return true;
+        return userMapper.update(user) > 0;
     }
 
-    public boolean doModifyIcon(String icon){
+    //
+    public boolean doModifyIcon(Integer userId, String icon){
         return true;
     }
 
     public boolean doRemove(int id){
-        return true;
-    }
-
-    public boolean doRemove(List<User> userList){
-        return true;
+        return userMapper.delete(id) > 0;
     }
 
     public User findById(int id){
-        User user = new User();
-        return user;
+        return userMapper.findById(id);
     }
 
+    //
     public User findByUserName(String userName){
         User user = new User();
         return user;
     }
 
     public List<User> findAll(){
-        List<User> userList = new ArrayList<User>();
-        return userList;
-    }
-
-    public List<User> findByCondition(String userName){
-        List<User> userList = new ArrayList<User>();
-        return userList;
+        return userMapper.findAll();
     }
 }

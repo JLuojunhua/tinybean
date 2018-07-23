@@ -15,47 +15,45 @@ public class CommentService {
     private CommentMapper commentMapper;
 
     public boolean doAdd(Comment comment) {
-        return true;
+        int row = commentMapper.add(comment);
+        return row>0;
     }
 
     public boolean doModify(Comment comment) {
-        return true;
+        int row = commentMapper.update(comment);
+        return row>0;
     }
 
     public boolean doRemove(int id) {
-        return true;
+        int row = commentMapper.delete(id);
+        return row>0;
     }
 
-    public boolean doRemove(List<Comment> commentList) {
-        return true;
-    }
-
-    public Comment findById(int id) {
-        Comment comment = new Comment();
+    public Comment findById(Integer id) {
+        Comment comment = commentMapper.findById(id);
         return comment;
     }
 
-    public Comment findByUserId(int UserId) {
-        Comment comment = new Comment();
-        return comment;
-    }
-
-    public Comment findByCommentText(String commentText) {
-        Comment comment = new Comment();
-        return comment;
-    }
-
-    public List<Comment> findAll() {
+    //
+    public List<Comment> findByUserId(int UserId) {
         List<Comment> commentList = new ArrayList<Comment>();
         return commentList;
     }
 
+    //
+    public List<Comment> findByCommentText(String commentText) {
+        List<Comment> commentList = new ArrayList<Comment>();
+        return commentList;
+    }
+
+    //
     public List<Comment> findBannedAll() {
         List<Comment> commentList = new ArrayList<Comment>();
         return commentList;
     }
 
-    public List<Comment> findByCondition(String userName) {
+    //
+    public List<Comment> findByMovieName(String movieName) {
         List<Comment> commentList = new ArrayList<Comment>();
         return commentList;
     }

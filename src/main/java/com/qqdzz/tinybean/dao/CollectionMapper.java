@@ -9,8 +9,11 @@ import org.springframework.stereotype.Component;
 @Component
 public interface CollectionMapper {
 
-    void add(Collection collection);
-    void delete(Integer id);
-    void update(Collection collection);
+    int add(Collection collection);
+    int delete(Integer id);
+    int update(Collection collection);
     Collection findById(Integer id);
+
+    //List<Collection> findByUserId();
+
 }
