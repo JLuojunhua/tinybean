@@ -22,11 +22,7 @@ public class User {
         this.userPassword = userPassword;
         this.userSex = userSex;
         this.userPhoneNum = userPhoneNum;
-<<<<<<< Updated upstream:src/main/java/com/qqdzz/tinybean/entity/User.java
-        this.userLikeCategories = userLikeCatagories;
-=======
         this.userLikeCategories = userLikeCategories;
->>>>>>> Stashed changes:src/main/java/com/qqdzz/entity/User.java
     }
 
     public Integer getId() {
@@ -85,20 +81,11 @@ public class User {
         this.userPhoneNum = userPhoneNum;
     }
 
-<<<<<<< Updated upstream:src/main/java/com/qqdzz/tinybean/entity/User.java
-    public String getUserLikeCatagories() {
-        return userLikeCategories;
-    }
-
-    public void setUserLikeCatagories(String userLikeCatagories) {
-        this.userLikeCategories = userLikeCatagories;
-=======
     public String getUserLikeCategories() {
         return userLikeCategories;
     }
 
     public void setUserLikeCategories(String userLikeCategories) {
         this.userLikeCategories = userLikeCategories;
->>>>>>> Stashed changes:src/main/java/com/qqdzz/entity/User.java
     }
 }

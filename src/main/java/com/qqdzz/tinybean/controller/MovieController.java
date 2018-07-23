@@ -1,8 +1,8 @@
-package com.qqdzz.controller;
+package com.qqdzz.tinybean.controller;
 
-import com.qqdzz.entity.JsonResult;
-import com.qqdzz.entity.Movie;
-import com.qqdzz.service.MovieService;
+import com.qqdzz.tinybean.entity.JsonResult;
+import com.qqdzz.tinybean.entity.Movie;
+import com.qqdzz.tinybean.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -26,6 +26,4 @@ public class MovieController {
 
     }
 
-    @DeleteMapping("/movie")
-    public
 }

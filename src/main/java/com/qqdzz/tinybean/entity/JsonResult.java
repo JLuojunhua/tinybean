@@ -1,4 +1,4 @@
-package com.qqdzz.entity;
+package com.qqdzz.tinybean.entity;
 
 import java.util.List;
 

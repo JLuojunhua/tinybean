@@ -1,4 +1,4 @@
-package com.qqdzz.vo;
+package com.qqdzz.tinybean.vo;
 
 public class SearchUserVO {
     private Integer UserId;
