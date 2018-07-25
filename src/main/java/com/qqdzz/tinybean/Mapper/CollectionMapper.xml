@@ -31,7 +31,8 @@
         SELECT * FROM USER where id = #{id}
     </select>
 
-    <select id="findAll" resultMap="CollectionResult">
-        select * from USER
+    <!--<Collection> findByUserId();-->
+    <select id="findByUserId" resultMap="CollectionResult">
+        select * from USER where user_id = #{id}
     </select>
 </mapper>
